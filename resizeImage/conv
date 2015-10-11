@@ -1,0 +1,5 @@
+#!/bin/sh
+
+for file in `ls images_raw`; do
+    python conv.py 256 images_raw/${file} dst_images/${file}
+done
