@@ -1,0 +1,7 @@
+- .git
+- .gitignore
+- .env
+- .DS_Store
+- manganow/images_256
+- manganow/images
+- manganow/images_info.txt

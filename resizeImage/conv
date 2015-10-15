@@ -1,5 +1,11 @@
 #!/bin/sh
 
-for file in `ls images_raw`; do
-    python conv.py 256 images_raw/${file} dst_images/${file}
+src_dit=$1
+dst_dit=$2
+
+rm -rf ${dst_dit}
+mkdir -p ${dst_dit}
+
+for file in `ls ${src_dit}`; do
+    python conv.py 256 ${src_dit}/${file} ${dst_dit}/${file}
 done
